@@ -16,13 +16,13 @@ def ban():
 ''')
 
     
-    print(Fore.CYAN + 'by @weyz ' + Fore.WHITE + '   Channel: ' + Fore.RED + '@cyber_puffin' + Fore.BLUE)
+    print(Fore.CYAN + 'by @weyz ' + Fore.WHITE + '   Channel: ' + Fore.RED + '@weyzofficali' + Fore.BLUE)
     print(Fore.BLUE + '------DEANONYM BOT BUILDER-----------------')
     print('-------------------------------------------\n')
 
 cls()
 ban()
-my_file = open('Dnnme.py', 'w', encoding='utf-8')
+my_file = open('Deanonbot.py', 'w', encoding='utf-8')
 
 a = input(Fore.MAGENTA + "Введите ваш айди: ")
 my_file.write("""
@@ -59,7 +59,7 @@ def process_name_step(message):
         user = User(name)
         user_dict[chat_id] = user
         msg = bot.reply_to(message, """Этот бот ищет информацию о номере телефона введите номер как на примере.
-    Пример: 380685576477   """)
+    Пример: 89030456615  """)
         bot.register_next_step_handler(msg, process_num_step)
     except Exception as e:
         bot.reply_to(message, 'Ошибка, нажмине /start или перезагрузите бота')
